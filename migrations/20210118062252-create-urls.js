@@ -9,7 +9,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       url: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        defaultValue: 0 
       },
       title: {
         type: Sequelize.STRING

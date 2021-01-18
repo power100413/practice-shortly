@@ -2,7 +2,6 @@
 const {
   Model
 } = require('sequelize');
-const { Sequelize } = require('.');
 module.exports = (sequelize, DataTypes) => {
   class urls extends Model {
     /**
@@ -17,7 +16,15 @@ module.exports = (sequelize, DataTypes) => {
   urls.init({
     url: DataTypes.STRING,
     title: DataTypes.STRING,
-    visits: { type: DataTypes.INTEGER, defaultValue: 0}
+    visits: { type: DataTypes.INTEGER, defaultValue: 0 },
+    // createdAt: {
+    //   type: DataTypes.DATE,
+    //   defaultValue: sequelize.literal('CURRENT_TIMESTAMP()')
+    // },
+    // updatedAt: {
+    //   type: DataTypes.DATE,
+    //   defaultValue: sequelize.literal('CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP()')
+    // }
   }, {
     sequelize,
     modelName: 'urls',
