@@ -40,7 +40,7 @@ describe('🚀 (1-2) 모델 생성', () => {
   let urlModel;
 
   before(() => {
-    urlModel = require('../models').url;
+    urlModel = require('../models').urls;
   })
 
   it('url 모델이 존재해야 합니다', () => {
@@ -90,7 +90,7 @@ describe('🚀 (1-3) 마이그레이션', () => {
   let urlModel;
 
   before(() => {
-    urlModel = require('../models').url;
+    urlModel = require('../models').urls;
   })
 
   it('마이그레이션을 했다면, urls 테이블이 존재해야 합니다', async () => {
