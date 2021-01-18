@@ -3,6 +3,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const linksRouter = require('./routes/links');
+const sequelize = require('./models').sequelize;
 
 const app = express();
 
