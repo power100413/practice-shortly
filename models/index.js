@@ -34,9 +34,5 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-User.hasMany(Player, {
-  foreignKey: 'clubId'
-});
-Player.belongsTo(Team);
 
 module.exports = db;
