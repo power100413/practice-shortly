@@ -5,11 +5,9 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "test": "mocha __test__/**.test.js --sort --exit",
-    "report": "mocha __test__/**.test.js --sort --exit --reporter @mochajs/json-file-reporter",
-    "submit": "codestates-submission"
+    "report": "mocha __test__/**.test.js --sort --exit --reporter @mochajs/json-file-reporter"
   },
   "dependencies": {
-    "@codestates-cc/submission-npm": "^1.1.2",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
