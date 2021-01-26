@@ -89,7 +89,7 @@ describe('🚀 (2-3) controller 구현', () => {
           'createdAt'
         ]);
 
-        console.table(res.body)
+        // console.table(res.body)
 
         recordId = res.body.id
         visitCount = res.body.visits

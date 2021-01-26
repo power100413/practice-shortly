@@ -1,18 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/index')
-const {urls} = require('../models');
+const controller = require('../controllers/links');
 
 /* GET links listing. */
-console.log(urls)
-router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
-});
-/*
-router.get('/links', controller.messages.get);
+router.get('/', controller.get);
 
-router.get('/links/:id', controller.messages.get);
+router.post('/', controller.post);
 
-router.post('/links', controller.messages.post);
-*/
+router.get('/:id', controller.idGet);
+
 module.exports = router;
